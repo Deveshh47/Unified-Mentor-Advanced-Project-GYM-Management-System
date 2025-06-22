@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease;
+}
+.login-box.animate {
+  animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2 {
+  margin-bottom: 1rem;
+  color: #1d2b64;
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #1d2b64;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background: #13214f;
+  transform: scale(1.02);
+}
+#error {
+  color: red;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="container fade-in">
+    <header>
+      <h1>🏋️ Admin Dashboard</h1>
+    </header>
+
+    <section class="card">
+      <h2>Add Bill</h2>
+      <input id="billUid" placeholder="Member UID" />
+      <input id="amount" type="number" placeholder="Amount (e.g. 2000)" />
+      <button onclick="addBill()">Add Bill</button>
+    </section>
+
+    <section class="card">
+      <h2>Send Notification</h2>
+      <input id="notifyUid" placeholder="Member UID" />
+      <input id="message" placeholder="Message (e.g. Your bill is due)" />
+      <button onclick="addNotification()">Send Notification</button>
+    </section>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

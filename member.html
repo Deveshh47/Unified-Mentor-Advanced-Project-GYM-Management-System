@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="member.css" />
+</head>
+<body>
+  <div class="container fade-in">
+    <header>
+      <h1>💪 Member Dashboard</h1>
+    </header>
+
+    <section class="card">
+      <h2>View Your Details</h2>
+      <input id="memberId" placeholder="Enter Your Member ID" />
+      <button onclick="loadData()">Load My Data</button>
+    </section>
+
+    <section class="card">
+      <h2>My Bills</h2>
+      <table>
+        <thead><tr><th>Amount</th><th>Date</th></tr></thead>
+        <tbody id="bills-body"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>My Notifications</h2>
+      <table>
+        <thead><tr><th>Message</th><th>Date</th></tr></thead>
+        <tbody id="notes-body"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="member.js"></script>
+</body>
+</html>
