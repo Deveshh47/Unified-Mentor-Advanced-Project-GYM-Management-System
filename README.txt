@@ -1,3 +1,5 @@
+********IMPORTANT*******Password Admin-deveshha47sa@gmail.com-GYMERMANAGER80
+********IMPORTANT*******Password User-fakemixer7@gmail.com-GYMERTRYER40
 # Gym Management System – Admin & Member Dashboards
 
 ## Features:
